@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lite"
+    android:orientation="vertical"
+    tools:context="com.example.achal.doctors.window">
+
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_cancel_24dp" />
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/nameTV"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/deep"
+        android:gravity="center"
+        android:text="Name"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/qaTV"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/deep"
+        android:gravity="center"
+        android:text="Qualification: MBBS(India), Mphil PATH, FCPS"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/hosTV"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/deep"
+        android:gravity="center"
+        android:text="Chamber:\nDhanmondi Medical College and Research Facility"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/expTV"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/deep"
+        android:gravity="center"
+        android:text="Expertse: Hematology"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/cityTV"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/deep"
+        android:gravity="center"
+        android:text="Location: Dhaka"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/conTV"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/deep"
+        android:gravity="center"
+        android:text="Contact: 01XXXXXX"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+</LinearLayout>

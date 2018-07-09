@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Doctors</string>
+
+    <string-array name="city">
+        <item>Dhaka</item>
+        <item>Barishal</item>
+        <item>Sylhet</item>
+        <item>Chattogram</item>
+        <item>Khulna</item>
+        <item>Rangpur</item>
+        <item>Rajshahi</item>
+        <item>Mymensingh</item>
+    </string-array>
+
+    <string-array name="exp">
+        <item>Hematology</item>
+        <item>Psychaitry</item>
+        <item>Urology</item>
+        <item>General Surgeon</item>
+        <item>Skin and VD</item>
+        <item>Medicine</item>
+    </string-array>
+
+    <string-array name="name">
+        <item>Dr. X</item>
+        <item>Dr. Y</item>
+        <item>Dr. X</item>
+        <item>Dr. M</item>
+        <item>Dr. F</item>
+    </string-array>
+</resources>
