@@ -2,6 +2,7 @@
     <string name="app_name">Doctors</string>
 
     <string-array name="city">
+        <item>All</item>
         <item>Dhaka</item>
         <item>Barishal</item>
         <item>Sylhet</item>
@@ -13,6 +14,7 @@
     </string-array>
 
     <string-array name="exp">
+        <item>All</item>
         <item>Hematology</item>
         <item>Psychaitry</item>
         <item>Urology</item>

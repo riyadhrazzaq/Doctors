@@ -43,10 +43,13 @@ public class CustomDBHelper extends SQLiteOpenHelper{
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
-    // adding data to db
+    /*------------------------------------------
+                    add
+            --------------------------------------------*/
 
     Random rand = new Random();
     public boolean addData(String name,String qa, String exp, String chamber, String loc, String con) {
+        Log.d("say",name+qa+exp+chamber+loc+con);
         SQLiteDatabase sqdb = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         int id = rand.nextInt(5000);
@@ -64,6 +67,9 @@ public class CustomDBHelper extends SQLiteOpenHelper{
     }
 
 
+    /*------------------------------------------
+                    getAll
+    --------------------------------------------*/
 
     Cursor getAllByCursor() {
         SQLiteDatabase sq = this.getReadableDatabase();
@@ -76,13 +82,16 @@ public class CustomDBHelper extends SQLiteOpenHelper{
 
     }
 
-/*
-    Cursor getByReg(int reg) {
+    /*------------------------------------------
+          getByLocationAndExpertise Filter
+    --------------------------------------------*/
+    Cursor getBySpinner(String loc, String exp) {
         SQLiteDatabase sq = this.getReadableDatabase();
-        String q = "select * from " + TABLE_NAME + " where " + col_reg + " =" + reg;
+        String q = "SELECT * FROM " + TABLE_NAME + " WHERE " + col_loc + " = '" + loc + "' AND "+col_exp +" = '"+exp+"'";
         Cursor c = sq.rawQuery(q, null);
         return c;
     }
+/*
 
     void removeByReg(int reg) {
         SQLiteDatabase sq = this.getWritableDatabase();
