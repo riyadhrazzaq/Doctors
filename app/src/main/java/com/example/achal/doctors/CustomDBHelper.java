@@ -91,6 +91,19 @@ public class CustomDBHelper extends SQLiteOpenHelper{
         Cursor c = sq.rawQuery(q, null);
         return c;
     }
+
+    Cursor getByLoc(String loc) {
+        SQLiteDatabase sq = this.getReadableDatabase();
+        String q = "SELECT * FROM " + TABLE_NAME + " WHERE " + col_loc + " = '" + loc+"'";
+        Cursor c = sq.rawQuery(q, null);
+        return c;
+    }
+    Cursor getByExp(String exp) {
+        SQLiteDatabase sq = this.getReadableDatabase();
+        String q = "SELECT * FROM " + TABLE_NAME + " WHERE " +col_exp +" = '"+exp+"'";
+        Cursor c = sq.rawQuery(q, null);
+        return c;
+    }
 /*
 
     void removeByReg(int reg) {

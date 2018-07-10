@@ -18,7 +18,6 @@
         android:background="@drawable/ic_cancel_24dp" />
 
     <TextView
-        android:textSize="20sp"
         android:id="@+id/nameTV"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -27,68 +26,91 @@
         android:gravity="center"
         android:text="Name"
         android:textAllCaps="false"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        android:textSize="20sp" />
 
     <TextView
-        android:textSize="15sp"
         android:id="@+id/qaTV"
-        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@color/deep"
         android:gravity="center"
+        android:padding="5dp"
         android:text="Qualification: MBBS(India), Mphil PATH, FCPS"
         android:textAllCaps="false"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        android:textSize="15sp" />
 
     <TextView
-        android:textSize="20sp"
-        android:id="@+id/hosTV"
-        android:padding="5dp"
+        android:id="@+id/chamberTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:autoLink="map"
         android:background="@color/deep"
         android:gravity="center"
+        android:linksClickable="true"
+        android:padding="5dp"
         android:text="Chamber:\nDhanmondi Medical College and Research Facility"
         android:textAllCaps="false"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
     <TextView
-        android:textSize="15sp"
         android:id="@+id/expTV"
-        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@color/deep"
         android:gravity="center"
+        android:padding="5dp"
         android:text="Expertse: Hematology"
         android:textAllCaps="false"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
     <TextView
-        android:textSize="15sp"
         android:id="@+id/cityTV"
-        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@color/deep"
         android:gravity="center"
+        android:padding="5dp"
         android:text="Location: Dhaka"
         android:textAllCaps="false"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
     <TextView
-        android:textSize="15sp"
         android:id="@+id/conTV"
-        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@color/deep"
         android:gravity="center"
+        android:padding="5dp"
         android:text="Contact: 01XXXXXX"
         android:textAllCaps="false"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        android:textSize="15sp" />
+    <Button
+
+        android:id="@+id/call"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="Call for Appointment"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/gmap"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="Open in Maps"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
